@@ -13,5 +13,4 @@ plain_words_arr = []
 for word in span_arr_of_words:
     plain_words_arr.append(word.get_attribute("innerHTML") + " ")
 
-for index, word in enumerate(span_arr_of_words):
-    input_el.send_keys(plain_words_arr[index])
+input_el.send_keys(" ".join(plain_words_arr))
